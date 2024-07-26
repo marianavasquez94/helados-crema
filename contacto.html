@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif; /* Fuentes clasicas */
+                font-size: 12px; /* Tamaño de letra */
+            }
+            input  [type="text"], input [type="email"], select {
+                background: white; /* Fondo blanco */
+                height: 30px; /* Altura */
+                border-radius: 6px; /* Borde redondeado */
+                border: 1px solid #777; /* Borde gris */
+                margin-bottom: 15px; 
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            label {
+                font-weight: bold; /* Negrita */
+            } 
+
+            
+        </style>
+    
+    </head>
+    <body>
+       <form>
+        <label for="Nombre">Nombre</label>    
+        <input type="text" placeholder="Ingrese su nombre"/>
+
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" id="Apellidos" placeholder="Ingrese sus apellidos"/>
+
+        <label for="Correo">Correo</label>
+        <input type="email" id="Correo" placeholder="Ingrese su correo"/>
+
+        <label for="Servicios_Helados">Seleccione Servicio</label>
+        <select id="Servicios_Helados">
+            <option value="1">Preparado de helados de chocolate</option>
+            <option value="2">Preparado helado de fresa</option>
+            <option value="3">Preparado helado vainilla</option>
+        </select>
+
+        <label for="Mensaje">Extras para tu servicio</label>
+        <textarea id="Mensaje"></textarea>
+
+        <label>Pago al contado <input type="radio" value="CONT" name="tipo_pago"> </label>
+        <label>Pago con Tarjeta <input type="radio" value="TAR" name="tipo_pago"> </label>
+       </form>
+    </body>
+</html>
